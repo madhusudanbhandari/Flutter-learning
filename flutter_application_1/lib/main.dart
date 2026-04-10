@@ -4,11 +4,16 @@ void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: Text("Hello"), centerTitle: true),
+        appBar: AppBar(
+          title: Text("Hello", style: TextStyle(fontSize: 20.0)),
+          centerTitle: true,
+          backgroundColor: Colors.red,
+        ),
         body: Center(child: Text("HIII")),
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
           child: Text("Click"),
+          backgroundColor: Colors.red,
         ),
       ),
     ),

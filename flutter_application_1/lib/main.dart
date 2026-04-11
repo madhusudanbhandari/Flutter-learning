@@ -38,14 +38,17 @@ class MyWidget extends StatelessWidget {
       //     Container(color: Colors.green, child: Text("Hello")),
       //   ],
       // ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Row(children: [Text("One"), Text("Two")]),
-          Container(color: Colors.green, child: Text("Green")),
-          Container(color: Colors.red, child: Text("Red")),
-        ],
+      // body: Column(
+      //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //   crossAxisAlignment: CrossAxisAlignment.center,
+      //   children: [
+      //     Row(children: [Text("One"), Text("Two")]),
+      //     Container(color: Colors.green, child: Text("Green")),
+      //     Container(color: Colors.red, child: Text("Red")),
+      //   ],
+      // ),
+      body: Center(
+        child: Card(margin: EdgeInsets.all(20), child: Text("This is card")),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},

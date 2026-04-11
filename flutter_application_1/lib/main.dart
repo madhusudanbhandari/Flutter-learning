@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyWidget());
+  runApp(MaterialApp(home: MyWidget()));
 }
 
 class MyWidget extends StatelessWidget {
@@ -15,7 +15,8 @@ class MyWidget extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red,
       ),
-      body: Center(child: Text("HIII")),
+      //body: Center(child: Text("HIII")),
+      body: Center(child: Image(image: AssetImage("assets/one.png"))),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Text("Click"),

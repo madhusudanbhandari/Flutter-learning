@@ -29,13 +29,22 @@ class MyWidget extends StatelessWidget {
       //   color: Colors.grey,
       //   child: Text("Hello"),
       // ),
-      body: Row(
+      // body: Row(
+      //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //   crossAxisAlignment: CrossAxisAlignment.center,
+      //   children: [
+      //     Text("Hello"),
+      //     ElevatedButton(onPressed: () {}, child: Text("click")),
+      //     Container(color: Colors.green, child: Text("Hello")),
+      //   ],
+      // ),
+      body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Text("Hello"),
-          ElevatedButton(onPressed: () {}, child: Text("click")),
-          Container(color: Colors.green, child: Text("Hello")),
+          Row(children: [Text("One"), Text("Two")]),
+          Container(color: Colors.green, child: Text("Green")),
+          Container(color: Colors.red, child: Text("Red")),
         ],
       ),
       floatingActionButton: FloatingActionButton(

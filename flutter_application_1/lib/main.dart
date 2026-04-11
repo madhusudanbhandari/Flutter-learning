@@ -23,11 +23,20 @@ class MyWidget extends StatelessWidget {
       //   child: ElevatedButton(onPressed: () {},
       //    child: Text("click"),),
       // ),
-      body: Container(
-        padding: EdgeInsets.all(80.0),
-        margin: EdgeInsets.all(80),
-        color: Colors.grey,
-        child: Text("Hello"),
+      // body: Container(
+      //   padding: EdgeInsets.all(80.0),
+      //   margin: EdgeInsets.all(80),
+      //   color: Colors.grey,
+      //   child: Text("Hello"),
+      // ),
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Text("Hello"),
+          ElevatedButton(onPressed: () {}, child: Text("click")),
+          Container(color: Colors.green, child: Text("Hello")),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},

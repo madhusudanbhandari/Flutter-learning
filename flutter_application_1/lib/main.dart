@@ -15,8 +15,13 @@ class MyWidget extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red,
       ),
+
       //body: Center(child: Text("HIII")),
-      body: Center(child: Image(image: AssetImage("assets/one.png"))),
+      //body: Center(child: Image(image: AssetImage("assets/one.png"))),
+      //body: Center(child: Icon(Icons.add_ic_call)),
+      body: Center(
+        child: ElevatedButton(onPressed: () {}, child: Text("click")),
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Text("Click"),
